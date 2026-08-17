@@ -60,4 +60,25 @@ public class ProdutoController {
         produtoService.excluir(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Produto> atualizar(
+            @PathVariable Long id,
+            @RequestBody Produto produto) {
+
+        Produto produtoExistente = produtoService.buscarPorId(id);
+
+        if (produtoExistente == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        produto.setId(id);
+
+        try {
+            Produto produtoAtualizado = produtoService.salvar(produto);
+            return ResponseEntity.ok(produtoAtualizado);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
 }
