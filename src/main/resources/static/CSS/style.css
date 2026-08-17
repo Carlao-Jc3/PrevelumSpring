@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LADO ESQUERDO */
+.login-left {
+    width: 40%;
+    background-color: #cfcfcf;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* LADO DIREITO */
+.login-right {
+    width: 60%;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-right img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Layout geral */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 25%;
+    background-color: #bfbfbf;
+    padding: 40px;
+}
+
+.sidebar h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sidebar button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Conteúdo principal */
+.content {
+    width: 75%;
+    background-color: #e5e5e5;
+    padding: 40px;
+}
+
+.content h2 {
+    margin-bottom: 30px;
+}
+
+.content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Campo de pesquisa */
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #cfcfcf;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #d9d9d9;
+    border-bottom: 8px solid #e5e5e5;
+    cursor: pointer;
+}
+
+tbody tr.selecionado {
+    background-color: #b0b0b0;
+}

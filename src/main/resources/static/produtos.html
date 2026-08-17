@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Prevélum - Listagem de Produtos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- Menu lateral -->
+            <aside class="sidebar">
+                <h1>Prevélum</h1>
+
+                <button onclick="voltarCadastro()">Cadastro</button>
+                <button onclick="pesquisarProduto()">Pesquisar</button>
+                <button onclick="excluirProduto()">Excluir</button>
+            </aside>
+
+            <!-- Conteúdo principal -->
+            <main class="content">
+                <h2>Listagem de Produtos</h2>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Digite o nome do produto">
+
+                <!-- Tabela -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço M</th>
+                            <th>Estoque Inicial</th>
+                            <th>Fornecedor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaProdutos">
+                        <!-- Linhas geradas via JS -->
+                    </tbody>
+                </table>
+            </main>
+        </div>
+
+        <script src="js/produtos.js"></script>
+    </body>
+</html>
